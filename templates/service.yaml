@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Values.component }}
 spec:
-  type: {{ .Values.component }}
+  type: {{ .Values.service_type }}
   selector:
     app.kubernetes.io/name: {{ .Values.component }}
   ports:
