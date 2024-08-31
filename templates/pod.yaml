@@ -6,5 +6,5 @@ metadata:
     app.kubernetes.io/name: {{ .Values.component }}
 spec:
   containers:
-    - name: frontend
+    - name: {{ .Values.component }}
       image: rkalluru/{{ .Values.component }}
